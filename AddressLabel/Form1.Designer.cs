@@ -47,7 +47,7 @@
             ExitButton = new Button();
             AddressLabelGroupBox = new GroupBox();
             AddressLabel = new Label();
-            toolTip1 = new ToolTip(components);
+            MainToolTip = new ToolTip(components);
             MailingGroupBox.SuspendLayout();
             AddressLabelGroupBox.SuspendLayout();
             SuspendLayout();
@@ -72,6 +72,7 @@
             MailingGroupBox.TabIndex = 0;
             MailingGroupBox.TabStop = false;
             MailingGroupBox.Text = "Mailing Address";
+            MainToolTip.SetToolTip(MailingGroupBox, "Add Information for Address Label");
             // 
             // ZipCodeLabel
             // 
@@ -88,6 +89,7 @@
             ZipCodeTextBox.Name = "ZipCodeTextBox";
             ZipCodeTextBox.Size = new Size(114, 23);
             ZipCodeTextBox.TabIndex = 5;
+            MainToolTip.SetToolTip(ZipCodeTextBox, "Add Zip Code");
             // 
             // StateLabel
             // 
@@ -104,6 +106,7 @@
             StateTextBox.Name = "StateTextBox";
             StateTextBox.Size = new Size(114, 23);
             StateTextBox.TabIndex = 4;
+            MainToolTip.SetToolTip(StateTextBox, "Add State");
             // 
             // CityLabel
             // 
@@ -120,6 +123,7 @@
             CityTextBox.Name = "CityTextBox";
             CityTextBox.Size = new Size(298, 23);
             CityTextBox.TabIndex = 3;
+            MainToolTip.SetToolTip(CityTextBox, "Add City");
             // 
             // StreetAddressLabel
             // 
@@ -136,6 +140,7 @@
             StreetAddressTextBox.Name = "StreetAddressTextBox";
             StreetAddressTextBox.Size = new Size(298, 23);
             StreetAddressTextBox.TabIndex = 2;
+            MainToolTip.SetToolTip(StreetAddressTextBox, "Add Street Adress");
             // 
             // LastNameLabel
             // 
@@ -152,6 +157,7 @@
             LastNameTextBox.Name = "LastNameTextBox";
             LastNameTextBox.Size = new Size(298, 23);
             LastNameTextBox.TabIndex = 1;
+            MainToolTip.SetToolTip(LastNameTextBox, "Add Last Name");
             // 
             // FirstNameLabel
             // 
@@ -168,6 +174,7 @@
             FirstNameTextBox.Name = "FirstNameTextBox";
             FirstNameTextBox.Size = new Size(298, 23);
             FirstNameTextBox.TabIndex = 0;
+            MainToolTip.SetToolTip(FirstNameTextBox, "Add First Name");
             // 
             // DisplayLabelButton
             // 
@@ -176,6 +183,7 @@
             DisplayLabelButton.Size = new Size(105, 55);
             DisplayLabelButton.TabIndex = 1;
             DisplayLabelButton.Text = "&Display Label";
+            MainToolTip.SetToolTip(DisplayLabelButton, "Add Mailing Address Information to Address Label");
             DisplayLabelButton.UseVisualStyleBackColor = true;
             DisplayLabelButton.Click += DisplayLabelButton_Click;
             // 
@@ -186,6 +194,7 @@
             ClearButton.Size = new Size(105, 55);
             ClearButton.TabIndex = 2;
             ClearButton.Text = "&Clear";
+            MainToolTip.SetToolTip(ClearButton, "Clears Infromation");
             ClearButton.UseVisualStyleBackColor = true;
             ClearButton.Click += ClearButton_Click;
             // 
@@ -196,6 +205,7 @@
             ExitButton.Size = new Size(121, 56);
             ExitButton.TabIndex = 3;
             ExitButton.Text = "E&xit";
+            MainToolTip.SetToolTip(ExitButton, "Exit Program");
             ExitButton.UseVisualStyleBackColor = true;
             ExitButton.Click += ExitButton_Click;
             // 
@@ -208,6 +218,7 @@
             AddressLabelGroupBox.TabIndex = 4;
             AddressLabelGroupBox.TabStop = false;
             AddressLabelGroupBox.Text = "Address Label";
+            MainToolTip.SetToolTip(AddressLabelGroupBox, "Displays Address Label when all Feilds in the mailing Adress are filled and submitted with Display Label Button Press");
             // 
             // AddressLabel
             // 
@@ -257,6 +268,6 @@
         private Button ExitButton;
         private GroupBox AddressLabelGroupBox;
         private Label AddressLabel;
-        private ToolTip toolTip1;
+        private ToolTip MainToolTip;
     }
 }
