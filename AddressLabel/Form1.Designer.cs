@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             MailingGroupBox = new GroupBox();
             ZipCodeLabel = new Label();
             ZipCodeTextBox = new TextBox();
@@ -46,6 +47,7 @@
             ExitButton = new Button();
             AddressLabelGroupBox = new GroupBox();
             AddressLabel = new Label();
+            toolTip1 = new ToolTip(components);
             MailingGroupBox.SuspendLayout();
             AddressLabelGroupBox.SuspendLayout();
             SuspendLayout();
@@ -210,9 +212,10 @@
             // AddressLabel
             // 
             AddressLabel.AutoSize = true;
+            AddressLabel.Font = new Font("Times New Roman", 15.5F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AddressLabel.Location = new Point(27, 52);
             AddressLabel.Name = "AddressLabel";
-            AddressLabel.Size = new Size(0, 15);
+            AddressLabel.Size = new Size(0, 24);
             AddressLabel.TabIndex = 0;
             // 
             // MainForm
@@ -254,5 +257,6 @@
         private Button ExitButton;
         private GroupBox AddressLabelGroupBox;
         private Label AddressLabel;
+        private ToolTip toolTip1;
     }
 }

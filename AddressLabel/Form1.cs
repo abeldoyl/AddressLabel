@@ -31,11 +31,12 @@ namespace AddressLabel
         private void DisplayLabelButton_Click(object sender, EventArgs e)
         {
             AddressLabel.Text = (FirstNameTextBox.Text + " " +
-            LastNameTextBox.Text + "\n" + 
-            StreetAddressTextBox.Text + "\n" + 
-            CityTextBox.Text + "\n" + 
-            StateTextBox.Text + "\n" + 
+            LastNameTextBox.Text + "\n" +
+            StreetAddressTextBox.Text + "\n" +
+            CityTextBox.Text + ", " +
+            StateTextBox.Text + " " +
             ZipCodeTextBox.Text);
         }
+
     }
 }
