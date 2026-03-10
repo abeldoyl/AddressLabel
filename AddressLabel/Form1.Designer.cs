@@ -231,8 +231,10 @@
             // 
             // MainForm
             // 
+            AcceptButton = DisplayLabelButton;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = ExitButton;
             ClientSize = new Size(800, 450);
             Controls.Add(AddressLabelGroupBox);
             Controls.Add(ExitButton);
@@ -240,6 +242,7 @@
             Controls.Add(DisplayLabelButton);
             Controls.Add(MailingGroupBox);
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Address Label Viewer";
             MailingGroupBox.ResumeLayout(false);
             MailingGroupBox.PerformLayout();
