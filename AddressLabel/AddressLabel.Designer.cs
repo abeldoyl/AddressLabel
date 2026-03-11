@@ -218,7 +218,9 @@
             AddressLabelGroupBox.TabIndex = 4;
             AddressLabelGroupBox.TabStop = false;
             AddressLabelGroupBox.Text = "Address Label";
-            MainToolTip.SetToolTip(AddressLabelGroupBox, "Displays Address Label when all Feilds in the mailing Adress are filled and submitted with Display Label Button Press");
+            MainToolTip.SetToolTip(AddressLabelGroupBox, 
+            "Displays Address Label when all Feilds in the mailing Address" +
+            "\n" + "are filled and submitted with Display Label Button Press");
             // 
             // AddressLabel
             // 

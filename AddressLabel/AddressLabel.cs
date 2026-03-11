@@ -1,3 +1,10 @@
+/*
+Abel Doyle
+RCET 2265
+Spring Semester 2026
+AddressLabel
+https://github.com/abeldoyl/AddressLabel.git
+*/
 namespace AddressLabel
 {
     public partial class MainForm : Form
@@ -6,6 +13,8 @@ namespace AddressLabel
         {
             InitializeComponent();
         }
+
+        //Custom Methods below here -------------------------------------------
 
         private void SetDefaults()
         {
@@ -17,6 +26,8 @@ namespace AddressLabel
             ZipCodeTextBox.Text = "";
             AddressLabel.Text = "";
         }
+
+        //Event handlers below here -------------------------------------------
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
